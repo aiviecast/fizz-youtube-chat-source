@@ -17,7 +17,7 @@ effect fn main() -> Unit = {
     eprintln("[youtube] missing env: YOUTUBE_API_KEY / YOUTUBE_VIDEO_ID")
     process.exit(1)
   }
-  run(api_key, video_id)
+  run(api_key, video_id)!
 }
 
 effect fn run(api_key: String, video_id: String) -> Unit = {
